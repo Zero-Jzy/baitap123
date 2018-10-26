@@ -49,12 +49,13 @@ listStudent.push(student4);
 listStudent.push(student5);
 listStudent.push(student6);
 var classMainContent = document.getElementsByClassName('main-content');
-console.log(classMainContent.length);
 if(classMainContent != null && classMainContent.length >0){
     var mainContent = classMainContent[0];
     for (var i = 0; i < listStudent.length ; i++) {
-        var itemContent = '<div class="personal-infor">\n' +
-            '            <div class="avatar" style="background-image: url(\''+listStudent[i].avatar+'\'); background-size: cover">\n' +
+        var itemContent = '<div class="personal-infor">\n' +        //url('img/1.jpg');
+            '            <div class="avatar" style="background-image: url(\''+listStudent[
+
+                i].avatar+'\'); background-size: cover">\n' +
             '            </div>\n' +
             '            <div class="line-infor">\n' +
             '                <label>Rollnumber</label>\n' +
@@ -73,7 +74,6 @@ if(classMainContent != null && classMainContent.length >0){
             '                <div>'+listStudent[i].address+'</div>\n' +
             '            </div>\n' +
             '        </div>';
-        console.log(itemContent);
         mainContent.innerHTML += itemContent;
     }
 }

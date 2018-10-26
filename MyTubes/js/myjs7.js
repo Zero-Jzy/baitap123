@@ -20,15 +20,14 @@ var arrayTubes = new Array(
         author: 'Hà Anh Tuấn'
     }
 );
-
-var myTube = document.getElementById('myTubes');
-if (myTube!=null) {
+var myTubes = document.getElementById('myTubes');
+if (myTubes != null) {
     for (var i = 0; i < arrayTubes.length; i++) {
-        var listTubes = '    <div class="tube-item" style="float: left;margin: 20px;">\n' +
-            '        <iframe width="460" height="300" src="https://www.youtube.com/embed/' + arrayTubes[i].id + '" ' +
+        var listTube = '        <div class="tube-item" style="float: left; margin: 10px;">\n' +
+            '            <iframe width="460" height="300" src="https://www.youtube.com/embed/' + arrayTubes[i].id + '" ' +
             'frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>\n' +
-            '        <h3>' + arrayTubes[i].title + '</h3>\n' +
-            '    </div>';
-        myTube.innerHTML += listTubes;
+            '            <h3>' + arrayTubes[i].title + '</h3>\n' +
+            '        </div>';
+        myTubes.innerHTML += listTube;
     }
 }

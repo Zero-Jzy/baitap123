@@ -2,14 +2,20 @@ body,html {
     font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
-}
 
+}
+body{
+    width: 100%;
+    height: 100%;
+}
 * {
     box-sizing: border-box;
 }
 
 #row > .column {
     padding: 10px 10px;
+    margin-top: 13px;
+
 }
 
 #row:after {
@@ -35,7 +41,7 @@ body,html {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 58px;
+    padding-top: 57px;
     left: 0;
     top: 0;
     width: 100%;
@@ -121,9 +127,7 @@ img{
     width: 100%;
     border-radius: 10px ;
 }
-.demo {
-    opacity: 0.6;
-}
+
 /*#play{*/
     /*position: absolute;*/
     /*width: 50px;*/
@@ -131,11 +135,6 @@ img{
     /*left: 50%;*/
     /*transform: translateX(-50%);*/
 /*}*/
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
 img.hover-shadow {
     transition: 0.3s;
 }
@@ -148,22 +147,45 @@ img.hover-shadow {
     /*z-index: 9;*/
 /*}*/
 .hover-shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .mySlides h4{
     color: #f2f2f2;
     text-align: center;
+    background: black;
+    padding: 10px;
+    margin-top: 0;
 }
-
+.header{
+    height: 70px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    position: relative;
+    padding: 16px;
+}
+.header h1{
+    display: inline-block;
+    height: 38px;
+    margin: 0;
+}
+#search-box{
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+    width: 400px;
+    padding: 5px;
+    height: 35px;
+    border: 1px solid black;
+}
 #search{
     position: absolute;
-    top: 0px;
+    top: 0;
     background: none;
     border: none;
     outline: none;
     float: left;
     line-height: 35px;
     width: 350px;
+    font-size: 16px;
 
 }
 #btn{
@@ -172,13 +194,14 @@ img.hover-shadow {
     border: none;
     cursor: pointer;
 }
-
-#search-box{
-    box-sizing: border-box;
-    position: relative;
-    width: 400px;
-    padding: 5px;
-    margin: 15px 0 10px 40px;
-    height: 35px;
-    border: 1px solid black;
+.container{
+    width: 90%;
+    margin: auto;
+}
+footer{
+    background: rgba(21,24,8,0.08);
+    line-height: 50px;
+    border-top: 1px solid rgba(0,0,0,.5);
+    height: 50px;
+    text-align: center;
 }

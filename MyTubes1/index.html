@@ -4,15 +4,21 @@
 <link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
 <body>
-<div style="width: 90%;margin: auto">
-    <div id="search-box">
-        <input id="search" type="text" placeholder="Tìm Kiếm" name="keyword">
-        <button id="btn" ><img style="width: 20px" src="img/find.png"></button>
+<!--<img style="width: 100%;height: 100vh;z-index: -1;position: fixed" src="img/bg.jpg" alt="bg">-->
+<div class="header">
+    <div class="container">
+        <h1>LOGO</h1>
+        <div id="search-box">
+            <input id="search" type="text" placeholder="Tìm Kiếm" name="keyword">
+            <button id="btn" ><img style="width: 20px" src="img/find.png"></button>
+        </div>
     </div>
+</div>
+<div class="container">
     <div id="row">
 
     </div>
-
+</div>
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div id="modal-content">
@@ -21,7 +27,7 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-</div>
+<footer style="text-align: center;height: 50px">.......................</footer>
 <script src="js/myjs.js"></script>
 
 </body>
