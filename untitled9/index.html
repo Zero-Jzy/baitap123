@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        #lon1{animation-name:lon1 ;}
+        #lon2{animation-name:lon2 ;}
+        #lon1,#lon2{
+            width: 10%;
+            position: fixed;
+            animation-duration: 10s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes lon1{
+            0%{left: 0;top:0}
+            50%{left: 90%;top:0}
+            100%{left: 0;top: 0}
+        }
+        @keyframes lon2{
+            0%{left:90%;top:0}
+            50%{left: 0;top:0}
+            100%{left: 90%;top: 0}
+        }
+
+    </style>
+</head>
+<body>
+<div >
+    <img id="lon1" src="http://hinhnendepnhat.net/wp-content/uploads/2017/07/hinh-dong-de-thuong-chu-lon-kute.gif" alt="aaa">
+    <img id="lon2" src="http://hinhnendepnhat.net/wp-content/uploads/2017/07/hinh-dong-de-thuong-chu-lon-kute.gif" alt="aaa">
+</div>
+</body>
+</html>
