@@ -1,0 +1,76 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#lon1{animation-name:lon1 ;}
+#lon2{animation-name:lon2 ;}
+#lon1,#lon2{
+    width: 10%;
+    position: fixed;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+@keyframes lon1{
+    0%{left: 0;top:0}
+    50%{left: 90%;top:0}
+    100%{left: 0;top: 0}
+}
+@keyframes lon2{
+    0%{left:90%;top:0}
+    50%{left: 0;top:0}
+    100%{left: 90%;top: 0}
+}
+#box-a{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#a,#b{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    animation-name:quaya ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /*border-radius: 50%;*/
+    /*border-left: 10px solid white;*/
+    /*border-top: 10px solid transparent;*/
+    /*border-bottom: 10px solid transparent;*/
+    /*border-right: 10px solid white;*/
+}
+#b{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    animation-name:quayb ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#lona{
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    right: 0;
+}
+#lonb{
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 0;
+}
+@keyframes quaya {
+    0%{transform: rotate(-45deg)}
+    100%{transform: rotate(-405deg)}
+}
+@keyframes quayb {
+    0%{transform: rotate(45deg)}
+    100%{transform: rotate(405deg)}
+}
