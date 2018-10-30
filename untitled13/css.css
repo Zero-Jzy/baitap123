@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+audio{
+    display: block;
+}
+#ing{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 400px;
+
+}
+.column{
+    border: 1px solid black;
+    overflow: hidden;
+    width: 20%;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}
+#box{
+    width: 30%;
+    margin: auto;
+    z-index: 1;
+    left: 300px;
+    top: 50px;
+}
