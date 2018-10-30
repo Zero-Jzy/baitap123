@@ -6,7 +6,7 @@ xhttp.onreadystatechange = function () {
         var imgAudios='';
         for (var i = 0; i < jsOject.length; i++) {
             var img='    <div class="column">\n' +
-                '           <img onclick="playAudio(\''+jsOject[i].link+'\')" src="' + jsOject[i].thumbnail + '"  class="hover-shadow cursor">\n' +
+                '           <img onclick="changeAudio(\''+jsOject[i].link+'\')" src="' + jsOject[i].thumbnail + '"  class="hover-shadow cursor">\n' +
                 '    </div>';
             imgAudios+=img;
         }
@@ -16,12 +16,10 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open("GET", youtube_API, true);
 xhttp.send();
-function playAudio(link) {
+function changeAudio(link) {
     document.getElementById('source').src=link;
-    document.getElementById('audio').play();
 
 }
-
-// document.getElementById('close').onclick=function () {
-//     document.getElementById('audio').src='';
-// };
+document.getElementById('play').onclick=function () {
+    document.getElementById('audio').play();
+};
